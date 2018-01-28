@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="edu_city" />
+        <module name="edu_school" />
+        <module name="main" />
+        <module name="pay-java-ali" />
+        <module name="pay-java-common" />
+        <module name="pay-java-demo" />
+        <module name="pay-java-fuiou" />
+        <module name="pay-java-union" />
+        <module name="pay-java-wx" />
+        <module name="pay-java-wx-youdian" />
+        <module name="ybg_activiti" />
+        <module name="ybg_base_jar" />
+        <module name="ybg_base_jdbc" />
+        <module name="ybg_base_util" />
+        <module name="ybg_company" />
+        <module name="ybg_email" />
+        <module name="ybg_gen" />
+        <module name="ybg_https" />
+        <module name="ybg_inter" />
+        <module name="ybg_jwt" />
+        <module name="ybg_kaptcha" />
+        <module name="ybg_local_upload" />
+        <module name="ybg_mq" />
+        <module name="ybg_oss" />
+        <module name="ybg_pay" />
+        <module name="ybg_qrcode" />
+        <module name="ybg_quartz" />
+        <module name="ybg_rbac" />
+        <module name="ybg_rbac_base" />
+        <module name="ybg_sms_ali" />
+        <module name="ybg_social" />
+        <module name="ybg_weixin_api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="edu" target="1.5" />
+      <module name="edu_city" target="1.8" />
+      <module name="edu_school" target="1.8" />
+      <module name="main" target="1.8" />
+      <module name="pay-java-ali" target="1.8" />
+      <module name="pay-java-common" target="1.8" />
+      <module name="pay-java-demo" target="1.8" />
+      <module name="pay-java-fuiou" target="1.8" />
+      <module name="pay-java-parent" target="1.5" />
+      <module name="pay-java-union" target="1.8" />
+      <module name="pay-java-wx" target="1.8" />
+      <module name="pay-java-wx-youdian" target="1.8" />
+      <module name="quanmin_admin" target="1.5" />
+      <module name="ybg_activiti" target="1.8" />
+      <module name="ybg_base_jar" target="1.8" />
+      <module name="ybg_base_jdbc" target="1.8" />
+      <module name="ybg_base_util" target="1.8" />
+      <module name="ybg_company" target="1.8" />
+      <module name="ybg_email" target="1.8" />
+      <module name="ybg_gen" target="1.8" />
+      <module name="ybg_https" target="1.8" />
+      <module name="ybg_inter" target="1.8" />
+      <module name="ybg_jwt" target="1.8" />
+      <module name="ybg_kaptcha" target="1.8" />
+      <module name="ybg_local_upload" target="1.8" />
+      <module name="ybg_mq" target="1.8" />
+      <module name="ybg_oss" target="1.8" />
+      <module name="ybg_pay" target="1.8" />
+      <module name="ybg_qrcode" target="1.8" />
+      <module name="ybg_quartz" target="1.8" />
+      <module name="ybg_rbac" target="1.8" />
+      <module name="ybg_rbac_base" target="1.8" />
+      <module name="ybg_sms" target="1.5" />
+      <module name="ybg_sms_ali" target="1.8" />
+      <module name="ybg_social" target="1.8" />
+      <module name="ybg_thirdpartlogin" target="1.5" />
+      <module name="ybg_weixin_api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

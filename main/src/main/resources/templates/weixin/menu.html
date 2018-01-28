@@ -1,0 +1,155 @@
+<html>
+<head>
+<#include "/common/common2.ftl"/>
+</head>
+<body>
+	<div id="rrapp" v-cloak>
+		<div v-show="showList">
+			<div class="m-b-md" style="display: none;">
+				<form class="layui-form layui-form-pane" role="form" id="searchForm" name="searchForm">
+					<div class="layui-form-item"></div>
+					<a href="javascript:void(0)" class="btn btn-s-md btn-default btn-rounded" id="search">查询</a>
+				</form>
+			</div>
+			<header class="panel-heading">
+				<div class="doc-buttons">
+					<a class="layui-btn layui-btn-normal" @click="add">
+						<i class="fa fa-plus"></i>
+						&nbsp;新增
+					</a>
+					<a class="layui-btn layui-btn-normal" @click="update">
+						<i class="fa fa-pencil-square-o"></i>
+						&nbsp;修改
+					</a>
+					<a class="layui-btn layui-btn-normal" @click="del">
+						<i class="fa fa-trash-o"></i>
+						&nbsp;删除
+					</a>
+					<a class="layui-btn layui-btn-normal" @click="save">
+						<i class="fa fa-refresh"></i>
+						&nbsp;生成菜单
+					</a>
+					<a class="layui-btn layui-btn-normal" @click="cleanmenu">
+						<i class="fa fa-trash-o"></i>
+						&nbsp;清空远程菜单
+					</a>
+				</div>
+			</header>
+			<div style="background-color: #ecf0f5;">
+				<table id="menuTable" data-mobile-responsive="true" data-click-to-select="true">
+					<tr>
+						<th data-field="selectItem" data-checkbox="true"></th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div v-show="!showList" class="panel panel-default">
+			<div class="panel-heading">{{title}}</div>
+			<form class="layui-form layui-form-pane">
+				<div class="layui-form-item">
+					<label class="layui-form-label">名称</label>
+					<div class="layui-input-block">
+						<input type="text" style="display: block;" class="layui-input" v-model="weixinmenu.name" placeholder="" required="required" />
+					</div>
+				</div>
+				<div class="layui-form-item" v-if="weixinmenu.id ==null">
+					<label class="layui-form-label">类型</label>
+					<div class="layui-input-block">
+						<select class="layui-input" v-model="weixinmenu.ifsub" style="display: block;">
+							<option value="2">菜单</option>
+							<option value="1">按钮</option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item" v-if="weixinmenu.ifsub ==2">
+					<label class="layui-form-label">菜单序号</label>
+					<div class="layui-input-block">
+						<select class="layui-input" v-model="weixinmenu.menuorder" style="display: block;">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item" v-if="weixinmenu.ifsub ==1">
+					<label class="layui-form-label">按钮序号</label>
+					<div class="layui-input-block">
+						<select class="layui-input" v-model="weixinmenu.buttonorder">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item" v-if="weixinmenu.ifsub ==1&& weixinmenu.id ==null">
+					<label class="layui-form-label">上级菜单</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input" style="cursor: pointer;" v-model="weixinmenu.parentname" @click="menuTree" readonly="readonly" placeholder="一级菜单" />
+					</div>
+				</div>
+				<div class="layui-form-item" v-if="weixinmenu.ifsub ==1">
+					<label class="layui-form-label">按钮类型</label>
+					<div class="layui-input-block">
+						<select class="layui-input" v-model="weixinmenu.type">
+							<option value="view">链接类型</option>
+							<!--  <option value="click">点击类型</option>
+							<option value="scancode_push">扫一扫</option>
+							<option value="scancode_waitmsg">发送照片</option>
+							<option value="pic_sysphoto">发送照片</option>
+							<option value="pic_photo_or_album">发送照片</option>
+							<option value="pic_weixin">发送照片</option>
+							<option value="location_select">发送位置</option>
+							<option value="media_id">下发消息</option>
+							<option value="view_limited">图文消息</option>-->
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item" v-if="weixinmenu.type =='click'&&weixinmenu.ifsub ==1">
+					<label class="layui-form-label">按钮KEY值</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input" v-model="weixinmenu.key" placeholder="" required="required" />
+					</div>
+				</div>
+				<div class="layui-form-item" v-if="weixinmenu.type =='view'&&weixinmenu.ifsub ==1">
+					<label class="layui-form-label">按钮链接</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input" v-model="weixinmenu.url" placeholder="" required="required" />
+					</div>
+				</div>
+				<div class="layui-form-item" v-if="(weixinmenu.type =='media_id'||weixinmenu.type =='view_limited')&&weixinmenu.ifsub ==1">
+					<label class="layui-form-label">素材ID</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input" v-model="weixinmenu.media_id" placeholder="" required="required" />
+					</div>
+				</div>
+				<div class="layui-form-item" v-if="weixinmenu.type =='miniprogram'&&weixinmenu.ifsub ==1">
+					<label class="layui-form-label">小程序ID</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input" v-model="weixinmenu.appid" placeholder="" />
+					</div>
+				</div>
+				<div class="layui-form-item" v-if="weixinmenu.type =='miniprogram'&&weixinmenu.ifsub ==1">
+					<label class="layui-form-label">小程序路径</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input" v-model="weixinmenu.pagepath" placeholder="" required="required" />
+					</div>
+				</div>
+				<footer class="panel-footer text-right bg-light lter">
+					<div class="layui-form-item">
+						<input type="button" class="layui-btn layui-btn-normal" @click="saveOrUpdate" value="确定" />
+						&nbsp;&nbsp;
+						<input type="button" class="layui-btn layui-btn-danger" @click="reload" value="返回" />
+					</div>
+				</footer>
+			</form>
+		</div>
+	</div>
+	<!-- 选择菜单 -->
+	<div id="menuLayer" style="display: none; padding: 10px;">
+		<ul id="menuTree" class="ztree"></ul>
+	</div>
+	<script type="text/javascript" src="/js/weixin/menu.js"></script>
+</body>
+</html>

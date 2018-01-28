@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/edu/edu.iml" filepath="$PROJECT_DIR$/edu/edu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu/edu_city/edu_city.iml" filepath="$PROJECT_DIR$/edu/edu_city/edu_city.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu/edu_school/edu_school.iml" filepath="$PROJECT_DIR$/edu/edu_school/edu_school.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/main.iml" filepath="$PROJECT_DIR$/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-java-parent/pay-java-ali/pay-java-ali.iml" filepath="$PROJECT_DIR$/pay-java-parent/pay-java-ali/pay-java-ali.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-java-parent/pay-java-common/pay-java-common.iml" filepath="$PROJECT_DIR$/pay-java-parent/pay-java-common/pay-java-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-java-parent/pay-java-demo/pay-java-demo.iml" filepath="$PROJECT_DIR$/pay-java-parent/pay-java-demo/pay-java-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-java-parent/pay-java-fuiou/pay-java-fuiou.iml" filepath="$PROJECT_DIR$/pay-java-parent/pay-java-fuiou/pay-java-fuiou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-java-parent/pay-java-parent.iml" filepath="$PROJECT_DIR$/pay-java-parent/pay-java-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-java-parent/pay-java-union/pay-java-union.iml" filepath="$PROJECT_DIR$/pay-java-parent/pay-java-union/pay-java-union.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-java-parent/pay-java-wx/pay-java-wx.iml" filepath="$PROJECT_DIR$/pay-java-parent/pay-java-wx/pay-java-wx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-java-parent/pay-java-wx-youdian/pay-java-wx-youdian.iml" filepath="$PROJECT_DIR$/pay-java-parent/pay-java-wx-youdian/pay-java-wx-youdian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quanmin_admin.iml" filepath="$PROJECT_DIR$/quanmin_admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_activiti/ybg_activiti.iml" filepath="$PROJECT_DIR$/ybg_activiti/ybg_activiti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_base_jar/ybg_base_jar.iml" filepath="$PROJECT_DIR$/ybg_base_jar/ybg_base_jar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_base_jdbc/ybg_base_jdbc.iml" filepath="$PROJECT_DIR$/ybg_base_jdbc/ybg_base_jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_base_util/ybg_base_util.iml" filepath="$PROJECT_DIR$/ybg_base_util/ybg_base_util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_company/ybg_company.iml" filepath="$PROJECT_DIR$/ybg_company/ybg_company.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_email/ybg_email.iml" filepath="$PROJECT_DIR$/ybg_email/ybg_email.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_gen/ybg_gen.iml" filepath="$PROJECT_DIR$/ybg_gen/ybg_gen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_https/ybg_https.iml" filepath="$PROJECT_DIR$/ybg_https/ybg_https.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_inter/ybg_inter.iml" filepath="$PROJECT_DIR$/ybg_inter/ybg_inter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_jwt/ybg_jwt.iml" filepath="$PROJECT_DIR$/ybg_jwt/ybg_jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_kaptcha/ybg_kaptcha.iml" filepath="$PROJECT_DIR$/ybg_kaptcha/ybg_kaptcha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_local_upload/ybg_local_upload.iml" filepath="$PROJECT_DIR$/ybg_local_upload/ybg_local_upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_mq/ybg_mq.iml" filepath="$PROJECT_DIR$/ybg_mq/ybg_mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_oss/ybg_oss.iml" filepath="$PROJECT_DIR$/ybg_oss/ybg_oss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-java-parent/ybg_pay/ybg_pay.iml" filepath="$PROJECT_DIR$/pay-java-parent/ybg_pay/ybg_pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_qrcode/ybg_qrcode.iml" filepath="$PROJECT_DIR$/ybg_qrcode/ybg_qrcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_quartz/ybg_quartz.iml" filepath="$PROJECT_DIR$/ybg_quartz/ybg_quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_rbac/ybg_rbac.iml" filepath="$PROJECT_DIR$/ybg_rbac/ybg_rbac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_rbac_base/ybg_rbac_base.iml" filepath="$PROJECT_DIR$/ybg_rbac_base/ybg_rbac_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_sms/ybg_sms.iml" filepath="$PROJECT_DIR$/ybg_sms/ybg_sms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_sms/ybg_sms_ali/ybg_sms_ali.iml" filepath="$PROJECT_DIR$/ybg_sms/ybg_sms_ali/ybg_sms_ali.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_thirdpartlogin/ybg_social/ybg_social.iml" filepath="$PROJECT_DIR$/ybg_thirdpartlogin/ybg_social/ybg_social.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_thirdpartlogin/ybg_thirdpartlogin.iml" filepath="$PROJECT_DIR$/ybg_thirdpartlogin/ybg_thirdpartlogin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybg_weixin_api/ybg_weixin_api.iml" filepath="$PROJECT_DIR$/ybg_weixin_api/ybg_weixin_api.iml" />
+    </modules>
+  </component>
+</project>

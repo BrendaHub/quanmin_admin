@@ -1,0 +1,116 @@
+<html>
+<head>
+<#include "/common/common2.ftl"/>
+</head>
+<body>
+	<div id="rrapp">
+		<div class="panel panel-default">
+			<div class="panel-heading">{{title}}</div>
+			<form class="layui-form layui-form-pane">
+				<div class="panel-body">
+					<div class="layui-form-item">
+						<label class="layui-form-label">社交平台</label>
+						<div class="layui-input-block">
+							<select class="layui-input" style="display: block;" v-model="thirdpart">
+								<option value="2">微信</option>
+								<option value="3">新浪</option>
+								<option value="4">百度</option>
+								<option value="5">QQ</option>
+								<option value="6">Github</option>
+								<option value="7">阿里</option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 3">
+						<label class="layui-form-label">新浪APPid</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="sina.client_ID" placeholder="" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 3">
+						<label class="layui-form-label">新浪密钥</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="sina.client_SERCRET" placeholder="" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 4">
+						<label class="layui-form-label">百度APPid</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="baidu.client_ID" placeholder="" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 4">
+						<label class="layui-form-label">百度密钥</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="baidu.client_SERCRET" placeholder="" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 2">
+						<label class="layui-form-label">微信APPid</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="weixin.appId" placeholder="" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 2">
+						<label class="layui-form-label">微信密钥</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="weixin.secret" placeholder="" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 5">
+						<label class="layui-form-label">qqAPPid</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="qq.client_ID" placeholder="" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 5">
+						<label class="layui-form-label">qq密钥</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="qq.client_SERCRET" placeholder="" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 6">
+						<label class="layui-form-label">GithubAPPid</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="github.client_ID" placeholder="" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 6">
+						<label class="layui-form-label">Github密钥</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="github.client_SERCRET" placeholder="" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 7">
+						<label class="layui-form-label">支付宝APPid</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="ali.client_ID" placeholder="" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 7">
+						<label class="layui-form-label">支付宝商户密钥</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="ali.client_SERCRET" placeholder="2048位" />
+						</div>
+					</div>
+					<div class="layui-form-item" v-show="thirdpart == 7">
+						<label class="layui-form-label">支付宝公钥</label>
+						<div class="layui-input-block">
+							<input type="text" class="layui-input" v-model="ali.alipublickey" placeholder="" />
+						</div>
+					</div>
+					<footer class="panel-footer text-right bg-light lter">
+						<div class="layui-form-item">
+							<input type="button" class="layui-btn layui-btn-normal" @click="update" value="确定" />
+						</div>
+					</footer>
+				</div>
+			</form>
+		</div>
+		<font color="red">1.4 版本开始 ，社交设置不需要再配置 回调地址了。而且 所有平台都支持社交配置</font>
+	</div>
+	<script src="/js/system/thirdpart/thirdpart.js">
+        
+    </script>
+</body>
+</html>

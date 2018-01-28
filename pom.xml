@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ybg</groupId>
+	<artifactId>quanmin_admin</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<!--依赖spring boot -->
+	<properties>
+		<java.version>1.8</java.version>
+		<druid.version>1.0.26</druid.version>
+		<commons-httpclient.version>3.1</commons-httpclient.version>
+		<httpclient.version>4.5.2</httpclient.version>
+	</properties>
+	<modules>
+		<!--** 主要入口 必须 -->
+		<module>main</module>
+		<!--** DAO封装 必须 -->
+		<module>ybg_base_jdbc</module>
+		<!--** 工具类 ,必须 -->
+		<module>ybg_base_util</module>
+		<!--** 公共接口 必须 -->
+		<module>ybg_inter</module>
+		<!--** 权限底层 必须 -->
+		<module>ybg_rbac_base</module>
+		<!--** 权限管理 必须 -->
+		<module>ybg_rbac</module>
+		<!-- 企业模块 可删 -->
+		<module>ybg_company</module>
+		<!-- 阿里MQ 非必须 -->
+		<module>ybg_mq</module>
+		<!--** email 必须 -->
+		<module>ybg_email</module>
+		<!-- json web token 必须 -->
+		<module>ybg_jwt</module>
+		<!-- 定时任务 必须 -->
+		<module>ybg_quartz</module>
+		<!--** 基础Jar 必须 -->
+		<module>ybg_base_jar</module>
+		<!-- 代码生成 非必须 -->
+		<module>ybg_gen</module>
+		<!-- 教育子系统 非必须 -->
+		<module>edu</module>
+		<!-- 对象存储 非必须 -->
+		<module>ybg_oss</module>
+		<!-- 支付模块 非必须 -->
+		<module>pay-java-parent</module>
+		<!-- 短信模块 非必需 -->
+		<module>ybg_sms</module>
+		<!-- 第三方登陆模块 非必需 -->
+		<module>ybg_thirdpartlogin</module>
+		<!-- 微信接口模块 非必需 -->
+		<module>ybg_weixin_api</module>
+		<!-- 验证码模块 非必需 -->
+		<module>ybg_kaptcha</module>
+		<!-- 工作流模块 非必需 -->
+		<module>ybg_activiti</module>
+		<!-- 二维码模块 非必需 -->
+		<module>ybg_qrcode</module>
+		<!-- https 配置模块 非必需 -->
+		<module>ybg_https</module>
+		<!-- uflo 工作流  非必需 
+		<module>ybg_uflo</module>-->
+		<!-- uflo 报表引擎  非必需
+		<module>ybg_ureport</module> -->
+		<!-- uflo 规则引擎  非必需 
+		<module>ybg_urule</module>-->
+		<!-- 本地上传  非必需 -->
+		<module>ybg_local_upload</module>
+	</modules>
+	<build>
+		<defaultGoal>compile</defaultGoal>
+	</build>
+</project>

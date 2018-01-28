@@ -1,0 +1,71 @@
+<html>
+<head>
+<#include "/common/common2.ftl"/>
+</head>
+<body>
+	<div id="rrapp" v-cloak>
+		<div v-show="showList">
+			<div class="grid-btn">
+				<a class="layui-btn layui-btn-normal" @click="add">
+					<i class="fa fa-plus"></i>
+					&nbsp;新增
+				</a>
+				<a class="layui-btn layui-btn-normal" @click="update">
+					<i class="fa fa-pencil-square-o"></i>
+					&nbsp;修改
+				</a>
+				<a class="layui-btn layui-btn-normal" @click="del">
+					<i class="fa fa-trash-o"></i>
+					&nbsp;删除
+				</a>
+			</div>
+			<div class="table-responsive">
+				<table class="layui-hide" id="commoditytable"></table>
+			</div>
+		</div>
+		<div v-show="!showList" class="panel panel-default">
+			<div class="panel-heading">{{title}}</div>
+			<form class="layui-form layui-form-pane">
+				<div class="layui-form-item">
+					<label class="layui-form-label">商品名称</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input" v-model="commodity.name" placeholder="" />
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">计量单位</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input" v-model="commodity.type" placeholder="" />
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">价格</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input" v-model="commodity.price" placeholder="" />
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">图片</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input" v-model="commodity.picture" placeholder="" />
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">描述</label>
+					<div class="layui-input-block">
+						<input type="text" class="layui-input" v-model="commodity.description" placeholder="" />
+					</div>
+				</div>
+				<footer class="panel-footer text-right bg-light lter">
+					<div class="layui-form-item">
+						<input type="button" class="layui-btn layui-btn-normal" @click="saveOrUpdate" value="确定" />
+						&nbsp;&nbsp;
+						<input type="button" class="layui-btn layui-btn-danger" @click="reload" value="返回" />
+					</div>
+				</footer>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="/js/pay/commodity.js"></script>
+</body>
+</html>

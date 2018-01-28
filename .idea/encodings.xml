@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/edu" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/edu/edu_city" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/edu/edu_school" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/main" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-java-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-java-parent/pay-java-ali" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-java-parent/pay-java-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-java-parent/pay-java-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-java-parent/pay-java-fuiou" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-java-parent/pay-java-union" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-java-parent/pay-java-wx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-java-parent/pay-java-wx-youdian" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-java-parent/ybg_pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_activiti" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_base_jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_base_jdbc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_base_util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_company" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_email" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_gen" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_https" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_inter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_jwt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_kaptcha" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_local_upload" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_mq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_oss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_qrcode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_quartz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_rbac" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_rbac_base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_sms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_sms/ybg_sms_ali" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_thirdpartlogin/ybg_social" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ybg_weixin_api" charset="UTF-8" />
+  </component>
+</project>

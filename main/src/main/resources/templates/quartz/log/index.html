@@ -1,0 +1,26 @@
+<html>
+<head>
+<#include "/common/common2.ftl"/>
+</head>
+<body>
+	<div id="rrapp" v-cloak>
+		<div v-show="showList">
+			<div class="m-b-md">
+				<form class="layui-form layui-form-pane" role="form" id="searchForm" name="searchForm">
+					<div class="layui-form-item">
+						<label class="layui-form-label"> 任务: </label>
+						<div class="layui-input-inline">
+							<input class="layui-input" id="name" name="name">
+						</div>
+						<a href="javascript:void(0)" class="layui-btn layui-btn-normal" id="search" @click="reload">查询</a>
+					</div>
+				</form>
+			</div>
+			<div class="table-responsive">
+				<table class="layui-hide" id="joblogtable2"></table>
+			</div>
+		</div>
+	</div>
+	<script src="/js/quartz/log/list.js"></script>
+</body>
+</html>
